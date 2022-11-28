@@ -1,2 +1,3 @@
 #!/bin/bash
+0-run= $PYFILE
 print("Hello world")
