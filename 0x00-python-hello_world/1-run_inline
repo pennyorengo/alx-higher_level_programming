@@ -1,3 +1,2 @@
 #!/bin/bash
-
-python3 -c "$PYCODE"
+"$PYCODE" = print("Home sweet home")
