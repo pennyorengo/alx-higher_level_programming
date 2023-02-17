@@ -1,2 +1,34 @@
 #!/bin/bash
-export PYFILE=main.py
+
+
+
+# Check if the $PYFILE environment variable is set
+
+if [ -z "$PYFILE" ]; then
+    
+    echo "Error: \$PYFILE environment variable is not set."
+    
+    exit 1
+    
+fi
+
+
+
+# Run the Python script
+
+python $PYFILE
+
+
+
+# Check if the Python script completed successfully
+
+if [ $? -eq 0 ]; then
+    
+    echo "The Python script $PYFILE completed successfully."
+    
+else
+    
+    echo "The Python script $PYFILE failed with exit code $?"
+    
+fi
+
