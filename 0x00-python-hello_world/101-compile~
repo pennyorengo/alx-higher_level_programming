@@ -1,0 +1,6 @@
+#!/bin/bash
+filename="$PYFILE"
+python3 -m py_compile "$filename"
+output_filename="${filename%.py}.pyc"
+mv "__pycache__/$output_filename" "$new_filename"
+rm -rf __pycache__
