@@ -3,4 +3,3 @@
 # Execute the Python script
 python3 "$PYFILE"
 export PYFILE="main.py"
-
